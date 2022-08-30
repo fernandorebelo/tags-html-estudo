@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <div>
+      <form action="#" method="get">
+        <input type="hidden" name="oculto" value="abc" />
+        <div>
+          <label for="produto">Nome</label>
+          <input type="text" id="produto" name="produto" />
+        </div>
+        <br />
+
+        <div>
+          <label for="">Estado civil</label>
+          <input type="radio" name="estadocivil" value="solteiro" />Solteiro
+          <input type="radio" name="estadocivil" value="casado" />Casado
+          <input type="radio" name="estadocivil" value="divorciado" />Divorciado
+        </div>
+        <br />
+
+        <div>
+          <label for="">Turno</label>
+          <input type="radio" name="turno" value="matutino" />Matutino
+          <input type="radio" name="turno" value="vespertino" />Vespertino
+          <input type="radio" name="turno" value="noturno" />Noturno
+        </div>
+        <br />
+
+        <div>
+          <legend>Escolha a melhor opção:</legend>
+
+          <input
+            type="checkbox"
+            name="esportes[]"
+            id="natacao"
+            value="natacao"
+          />
+          <label for="natacao">Natação</label>
+
+          <input
+            type="checkbox"
+            name="esportes[]"
+            id="corrida"
+            value="corrida"
+          />
+          <label for="corrida">Corrida</label>
+
+          <input
+            type="checkbox"
+            name="esportes[]"
+            id="futebol"
+            value="futebol"
+          />
+          <label for="futebol">Futebol</label>
+        </div>
+        <br />
+
+        <div>
+          <label for="data">Data de nascimento</label>
+          <input type="date" name="data" id="data" />
+        </div>
+        <br />
+
+        <div>
+          <label for="mes">Mês</label>
+          <input type="month" name="mes" id="mes" />
+        </div>
+        <br />
+
+        <div>
+          <label for="ano">Ano</label>
+          <input type="year" name="ano" id="" />
+        </div>
+        <br />
+
+        <div>
+          <label for="email">E-mail</label>
+          <input type="email" name="email" id="email" />
+        </div>
+        <br />
+
+        <div>
+          <label for="telefone">Telefone</label>
+          <input type="tel" name="telefone" id="telefone" />
+        </div>
+        <br />
+
+        <div>
+          <label for="idade">Idade</label>
+          <input type="number" name="idade" id="idade" min="1" max="90" />
+        </div>
+        <br />
+
+        <div>
+          <label for="conhecimento">Conhecimento</label>
+          <input type="range" name="conhecimento" id="conhecimento" step="10" />
+        </div>
+        <br />
+
+        <div>
+          <label for="cor">Cor</label>
+          <input type="color" name="cor" id="cor" />
+        </div>
+        <br />
+
+        <div>
+          <select name="estado" id="estado">
+            <option value="" selected></option>
+            <option value="sc">Santa Catarina</option>
+            <option value="rgs">Rio Grande do Sul</option>
+            <option value="pr">Paraná</option>
+          </select>
+        </div>
+        <br />
+
+        <div>
+          <select name="comidas" id="comidas" multiple>
+            <option value="banana">Banana</option>
+            <option value="maca">Maçã</option>
+            <option value="laranja">Laranja</option>
+          </select>
+        </div>
+        <br />
+
+        <div>
+          <label for="texto">Escreva</label>
+          <textarea
+            name="texto"
+            id="texto"
+            cols="50"
+            rows="10"
+            maxlength="150"
+          ></textarea>
+        </div>
+        <br />
+
+        <div>
+          <label for="autofocus">Autofocus</label>
+          <input type="text" name="" id="autofocus" autofocus />
+          <br />
+
+          <label for="readonly">Readonly</label>
+          <input type="text" id="readonly" value="Apenas leitura" readonly />
+          <br />
+
+          <label for="disabled">Disabled</label>
+          <input type="text" name="" id="disabled" disabled />
+          <br />
+
+          <label for="required">Required</label>
+          <input type="text" name="" id="required" required />
+        </div>
+        <br />
+
+        <div>
+          <p>Validação de cpf</p>
+          <label for="cpf">CPF</label>
+          <input type="text" name="cpf" id="cpf" pattern="" />
+        </div>
+
+        <br />
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+      </form>
+    </div>
+    <br />
+    <div>
+      <h1>Envio de arquivos</h1>
+      <form action="#" method="post" enctype="multipart/form-data">
+        <div>
+          <label for="arquivo">Um arquivo</label>
+          <input type="file" name="arquivo" id="arquivo" />
+        </div>
+        <br />
+
+        <div>
+          <label for="multiplos">Vários arquivos</label>
+          <input type="file" name="multiplos" id="multiplos" multiple />
+        </div>
+        <br />
+
+        <div>
+          <label for="imagens">Imagem</label>
+          <input
+            type="file"
+            name="imagens"
+            id="imagens"
+            accept=".jpg, .png"
+            multiple
+          />
+        </div>
+        <br />
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </body>
+</html>
